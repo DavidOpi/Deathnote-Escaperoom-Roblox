@@ -21,7 +21,7 @@ We had this idea of making a Roblox game for experience and projects to put on o
 
 --
 
-
+### THE DATABASE IS ALREADY INCORPORATED WITHIN ROBLOX. We used the pre made one.
 
 
 
