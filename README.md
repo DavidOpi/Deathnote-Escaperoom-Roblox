@@ -23,6 +23,28 @@ We had this idea of making a Roblox game for experience and projects to put on o
 
 ### THE DATABASE IS ALREADY INCORPORATED WITHIN ROBLOX. We used the pre made one.
 
+--
+
+# Somewhat of the Pseudocode
+## Drawers
+- TweenService (Built in function to animate with code)
+- Call object
+- name position
+- info of what it does
+- goal of the location
+- if clicked then
+    - play animation
+
+## Keypad
+- call each object
+- TweenService
+- check if button sequence is correct by pressing on number
+- if correct then play animation on bookshelf
+
+## Computer
+- name each frame
+- if interacted then make gui visible and interactable
+- when pressed certain location then loads different pages in the frame
 
 
 
