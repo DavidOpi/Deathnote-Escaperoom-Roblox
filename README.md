@@ -1,5 +1,5 @@
 # Deathnote-Escaperoom-Roblox
-## Concpet:
+## Concept:
 Developing a deathnote themed escape room, using multiple puzzles, an in game working computer, and brain busting obstacles to grab the deathnote. Based off a popluar anime,
 you are a FBI agent. You enter into Light Yagami's room in hopes of finding the death note.
 Right as you enter, Yagami's security system locks the door behind you, leaving you no other option but to find an alternate escape. You have limited time before Yagami comes back home, and he is not happy you're here.
@@ -264,11 +264,25 @@ camera.FieldOfView = 20
 local function updateCamera()
 ```
 
+## Flashlight Code
+```
+local anim = script.Parent:WaitForChild("Humanoid"):LoadAnimation(script.Parent.FlashLight)
 
 
+script.VisualizeFlashlight.OnServerEvent:Connect(function()
+	game.Lighting.Handle:Clone().Parent = script.Parent
+	script.Parent:WaitForChild("Handle").Sound:Play()
+	local weld = game.Lighting.Weld:Clone()
+	weld.Parent = script.Parent
+	weld.Part0 = script.Parent.RightHand
+	weld.Part1 = script.Parent:WaitForChild("Handle")
+	anim:Play()
+	script.DisableFpsLight:FireClient(game.Players:GetPlayerFromCharacter(script.Parent))
+end)
 
-	
-
-
-
-
+script.UnVisualizeFlashlight.OnServerEvent:Connect(function()
+	script.Parent:WaitForChild("Weld"):Destroy()
+	anim:Stop()
+	script.Parent:WaitForChild("Handle"):Destroy()
+end)
+```
