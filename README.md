@@ -18,9 +18,6 @@ We had this idea of making a Roblox game for experience and projects to put on o
 [Playlist full of tutorials](https://www.youtube.com/watch?v=BkYwRdCukZA&list=PLhieaQmOk7nIfMZ1UmvKGPrwuwQVwAvFa&ab_channel=TheDevKing)
 
 [Light Yagami's Room](https://www.youtube.com/watch?v=Hhdvph9sH1M&ab_channel=onuryasemin)
-
-(Code for the game can not be listed in here because the game is still in working progress and can not be played)
-
 --
 
 ### THE DATABASE IS ALREADY INCORPORATED WITHIN ROBLOX. We used the pre made one.
